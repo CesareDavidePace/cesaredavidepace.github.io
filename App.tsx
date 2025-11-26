@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AppData, Language } from './types';
 import Section from './components/Section';
 import Hero from './components/Hero';
@@ -6,7 +6,7 @@ import BackgroundAnimation from './components/BackgroundAnimation';
 import { generateCV } from './services/pdfGenerator';
 import { 
   Moon, Sun, Globe, Github, Linkedin, GraduationCap, 
-  Download, ExternalLink, Calendar, MapPin, Layers, FileText, Instagram 
+  Download, ExternalLink, MapPin, Layers, FileText, Instagram 
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -129,7 +129,7 @@ const ProjectCard = ({ project, lang, ui }: { project: any, lang: Language, ui: 
   </motion.div>
 );
 
-const PaperItem = ({ paper, ui, lang }: { paper: any, ui: any, lang: Language }) => (
+const PaperItem = ({ paper }: { paper: any }) => (
   <div className="bg-white dark:bg-dark-card p-6 rounded-xl border border-gray-100 dark:border-gray-700 hover:border-primary-200 dark:hover:border-primary-800 transition-colors">
     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
       <div className="flex-1 min-w-0">
@@ -326,7 +326,7 @@ export default function App() {
         <Section id="publications" title={data.ui.papers[lang]}>
             <div className="grid grid-cols-1 gap-4 w-full">
                 {data.publications.map(paper => (
-                    <PaperItem key={paper.id} paper={paper} ui={data.ui} lang={lang} />
+                    <PaperItem key={paper.id} paper={paper} />
                 ))}
             </div>
         </Section>
