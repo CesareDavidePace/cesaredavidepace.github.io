@@ -1,0 +1,208 @@
+{
+  "profile": {
+    "name": "Cesare Davide Pace",
+    "role": {
+      "en": "Ph.D. Student in AI & Biomechanics",
+      "it": "Dottorando in IA e Biomeccanica"
+    },
+    "tagline": {
+      "en": "Developing markerless motion capture systems using artificial intelligence.",
+      "it": "Sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale."
+    },
+    "email": "cesaredavide.pace@unicas.it",
+    "location": "Cassino(FR), Italy",
+    "socials": [
+      { "network": "GitHub", "username": "CesareDavidePace", "url": "https://github.com/CesareDavidePace", "iconName": "Github" },
+      { "network": "LinkedIn", "username": "Cesare Davide Pace", "url": "https://www.linkedin.com/in/cesare-davide-pace/", "iconName": "Linkedin" },
+      { "network": "Scholar", "username": "Google Scholar", "url": "https://scholar.google.com/citations?user=F2jWjxAAAAAJ&hl=it&oi=ao", "iconName": "GraduationCap" },
+      { "network": "Instagram", "username": "cesaredavidepace", "url": "https://instagram.com/cesaredavidepace", "iconName": "Instagram" }
+    ],
+    "about": {
+      "en": "Ph.D. Student at the Department of Electrical and Information Engineering, University of Cassino and Southern Lazio. My research focuses on developing markerless motion capture systems using artificial intelligence for biomechanical analysis and clinical applications.",
+      "it": "Dottorando presso il Dipartimento di Ingegneria Elettrica e dell'Informazione, Università degli Studi di Cassino e del Lazio Meridionale. La mia ricerca si concentra sullo sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale per l'analisi biomeccanica e applicazioni cliniche."
+    }
+  },
+  "history": [
+    {
+      "id": "1",
+      "year": "2023 - Present",
+      "title": { 
+        "en": "Ph.D. in AI & Biomechanics", 
+        "it": "Dottorato di Ricerca in IA e Biomeccanica" 
+      },
+      "institution": "Università degli Studi di Cassino e del Lazio Meridionale & LUNEX",
+      "logos": ["/assets/unicas_emblem.svg", "/assets/logo_lunex.png"],
+      "description": {
+        "en": "Developing markerless motion capture systems using artificial intelligence for biomechanical analysis.",
+        "it": "Sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale per l'analisi biomeccanica."
+      },
+      "type": "education"
+    },
+    {
+      "id": "1b",
+      "year": "2025 (6 months)",
+      "title": { 
+        "en": "Visiting Researcher", 
+        "it": "Ricercatore Visiting" 
+      },
+      "institution": "LUNEX University",
+      "logo": "/assets/logo_lunex.png",
+      "description": {
+        "en": "Six-month research visit focused on markerless motion capture systems and biomechanical analysis.",
+        "it": "Visita di ricerca di sei mesi incentrata su sistemi markerless di motion capture e analisi biomeccanica."
+      },
+      "type": "work"
+    },
+    {
+      "id": "2",
+      "year": "2021 - 2023",
+      "title": { 
+        "en": "M.Sc. in Computer Engineering", 
+        "it": "Laurea Magistrale in Ingegneria Informatica" 
+      },
+      "institution": "Università degli Studi di Cassino e del Lazio Meridionale",
+      "logo": "/assets/unicas_emblem.svg",
+      "description": {
+        "en": "Graduated with honors (110 e lode).",
+        "it": "Laureato con lode (110 e lode)."
+      },
+      "type": "education"
+    },
+    {
+      "id": "3",
+      "year": "2017 - 2020",
+      "title": { 
+        "en": "B.Sc. in Computer and Telecommunications Engineering", 
+        "it": "Laurea in Ingegneria Informatica e delle Telecomunicazioni" 
+      },
+      "institution": "Università degli Studi di Cassino e del Lazio Meridionale",
+      "logo": "/assets/unicas_emblem.svg",
+      "description": {
+        "en": "Bachelor's degree in Computer and Telecommunications Engineering.",
+        "it": "Laurea triennale in Ingegneria Informatica e delle Telecomunicazioni."
+      },
+      "type": "education"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": { "en": "LittleGym Management System", "it": "Sistema di Gestione LittleGym" },
+      "description": {
+        "en": "A comprehensive gym booking management system for LittleGym, featuring class scheduling, member management, and online reservations.",
+        "it": "Sistema completo di gestione prenotazioni per LittleGym, con programmazione corsi, gestione soci e prenotazioni online."
+      },
+      "technologies": ["C#", "Web Development", "Management System", "SQL Server", "Full-stack"],
+      "category": "web",
+      "imageUrl": "/project/littlegym/image.png",
+      "link": "https://www.littlegym.it"
+    },
+    {
+      "id": "p2",
+      "title": { "en": "Unicas2Go", "it": "Unicas2Go" },
+      "description": {
+        "en": "Mobile carpooling application for university students at Unicas. Connect with fellow students for shared rides to and from campus.",
+        "it": "Applicazione mobile per il carpooling universitario ad Unicas. Connetti con altri studenti per condividere viaggi da e per il campus."
+      },
+      "technologies": ["Mobile Development", "Flutter", "Firebase", "Firestore", "Google Maps API"],
+      "category": "mobile",
+      "imageUrl": "/project/unicas2go/Unicas2Go.png",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.lopatech.unicas2go",
+      "appStoreLink": "https://apps.apple.com/it/app/unicas2go/id6478915627"
+    },
+    {
+      "id": "p3",
+      "title": { "en": "CLEPSYDRA", "it": "CLEPSYDRA" },
+      "description": {
+        "en": "Groundwater Monitoring & Decision Support System Development to Optimise Decision Making in Sensitive and Water-Scarce Agricultural Environments in Mediterranean Context.",
+        "it": "Sistema di Monitoraggio delle Acque Sotterranee e Supporto Decisionale per ottimizzare il processo decisionale in ambienti agricoli sensibili e a scarsità idrica nel contesto mediterraneo."
+      },
+      "technologies": ["TypeScript", "React", "Python", "PyTorch", "Celery", "FastAPI"],
+      "category": "web",
+      "imageUrl": "/project/clepsydra/clepsydra.png",
+      "link": "http://clepsydra-dss.eu:8008/Clepsydra_Frontend/"
+    },
+    {
+      "id": "p4",
+      "title": { "en": "Asbestos Roof Detection with MapSat", "it": "Rilevamento Tetti in Amianto con MapSat" },
+      "description": {
+        "en": "Master thesis project for detecting asbestos roofs from orthophotos using YOLO-based deep learning.",
+        "it": "Progetto di tesi magistrale per il rilevamento di tetti in amianto da ortofoto utilizzando deep learning basato su YOLO."
+      },
+      "technologies": ["OpenCV", "PyTorch", "YOLO", "Python", "Rasterio"],
+      "category": "deep-learning",
+      "imageUrl": "/project/asbestos/asbestos.jpg"
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub1",
+      "title": "Poseidon: A ViT-based Architecture for Multi-Frame Pose Estimation with Adaptive Frame Weighting and Multi-Scale Feature Fusion",
+      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "venue": "arXiv Preprint",
+      "year": 2025,
+      "tags": ["Computer Vision", "Pose Estimation", "Deep Learning"],
+      "pdfLink": "http://arxiv.org/abs/2501.08446v1",
+      "githubUrl": "https://github.com/cesaredavidepace/poseidon"
+    },
+    {
+      "id": "pub2",
+      "title": "Markerless Machine Learning Approach for Gait Classification in Knee Osteoarthritis",
+      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "venue": "Book Chapter",
+      "year": 2025,
+      "tags": ["Gait Analysis", "Machine Learning", "Biomechanics"],
+      "doi": "10.1007/978-3-031-87660-8_9"
+    },
+    {
+      "id": "pub3",
+      "title": "Transformers and CNNs in Neurodiagnostics: Handwriting Analysis for Alzheimer's Diagnosis",
+      "authors": ["Gabriele Lozupone", "Emanuele Nardone", "Cesare Davide Pace", "Tiziana D'Alessandro"],
+      "venue": "Book Chapter",
+      "year": 2025,
+      "tags": ["Deep Learning", "Medical AI", "Alzheimer's"],
+      "doi": "10.1007/978-3-031-78195-7_30"
+    },
+    {
+      "id": "pub4",
+      "title": "From Handwriting Analysis to Alzheimer's Disease Prediction: An Experimental Comparison of Classifier Combination Methods",
+      "authors": ["Tiziana D'Alessandro", "Claudio De Stefano", "Francesco Fontanella", "Emanuele Nardone", "Cesare Davide Pace"],
+      "venue": "Book Chapter",
+      "year": 2024,
+      "tags": ["Machine Learning", "Medical AI", "Alzheimer's"],
+      "doi": "10.1007/978-3-031-70536-6_20"
+    },
+    {
+      "id": "pub5",
+      "title": "UniCas for Medicine and Healthcare",
+      "authors": ["M. Cantone", "S. Galasso", "G. Lozupone", "E. Nardone", "C.D. Pace", "C. Russo", "A. Bria", "T. D'Alessandro", "C. De Stefano", "F. Fontanella", "C. Marrocco", "M. Molinara", "A.S. di Freca"],
+      "venue": "Conference Paper",
+      "year": 2024,
+      "tags": ["Medical AI", "Healthcare"]
+    },
+    {
+      "id": "pub6",
+      "title": "End-to-End Asbestos Roof Detection on Orthophotos Using Transformer-Based YOLO Deep Neural Network",
+      "authors": ["C.D. Pace", "A. Bria", "M. Focareta", "G. Lozupone", "C. Marrocco", "G. Meoli", "M. Molinara"],
+      "venue": "Conference Paper",
+      "year": 2023,
+      "tags": ["Computer Vision", "Object Detection", "Transformers"],
+      "doi": "10.1007/978-3-031-43148-7_20"
+    }
+  ],
+  "ui": {
+    "home": { "en": "Home", "it": "Home" },
+    "history": { "en": "History", "it": "Storia" },
+    "projects": { "en": "Projects", "it": "Progetti" },
+    "papers": { "en": "Publications", "it": "Pubblicazioni" },
+    "contact": { "en": "Contact", "it": "Contatti" },
+    "downloadCvShort": { "en": "Short CV (1 Page)", "it": "CV Breve (1 Pagina)" },
+    "downloadCvLong": { "en": "Extended CV", "it": "CV Completo" },
+    "education": { "en": "Education", "it": "Istruzione" },
+    "work": { "en": "Experience", "it": "Esperienza" },
+    "techStack": { "en": "Tech Stack", "it": "Tecnologie" },
+    "all": { "en": "All", "it": "Tutti" },
+    "viewProject": { "en": "View Project", "it": "Vedi Progetto" },
+    "readPaper": { "en": "Read Paper", "it": "Leggi Articolo" }
+  }
+}
