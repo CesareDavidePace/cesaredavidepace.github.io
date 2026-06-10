@@ -1,0 +1,29 @@
+# Cesare Davide Pace
+
+> PhD Researcher in Artificial Intelligence and Biomechanics at the University of Cassino and Southern Lazio (UNICAS) and LUNEX University, Luxembourg.
+
+Cesare Davide Pace is an Italian researcher developing AI-powered markerless motion capture systems for biomechanical analysis and clinical diagnosis of neurodegenerative diseases, particularly Parkinson's disease and Alzheimer's disease.
+
+## Research focus
+- Markerless motion capture using pose estimation (ViTPose, YOLO-based)
+- Gait analysis for Parkinson's disease diagnosis using machine learning
+- Handwriting analysis for Alzheimer's disease prediction
+- Explainable AI (XAI) for medical applications
+- Vision Transformers (ViT) for video-based human pose estimation
+
+## Key publications
+- "Markerless Gait Analysis for Parkinson's disease diagnosis" — Engineering Applications of Artificial Intelligence, Elsevier, 2025. DOI: 10.1016/j.engappai.2025.112031
+- "Poseidon: A ViT-based Architecture for Multi-Frame Pose Estimation" — arXiv 2025. https://arxiv.org/abs/2501.08446
+- "Uncertainty-Aware Mapping from 3D Keypoints to Anatomical Landmarks" — arXiv 2026
+
+## Identifiers
+- ORCID: https://orcid.org/0009-0006-5678-1610
+- Google Scholar: https://scholar.google.com/citations?user=F2jWjxAAAAAJ
+- DBLP: https://dblp.org/pid/356/2014
+- GitHub: https://github.com/CesareDavidePace
+- LinkedIn: https://www.linkedin.com/in/cesare-davide-pace/
+
+## Affiliations
+- PhD student, DIEI Department, University of Cassino and Southern Lazio (UNICAS)
+- Co-tutela, LUNEX University, Luxembourg
+- Technologist, EveryBotics S.R.L.

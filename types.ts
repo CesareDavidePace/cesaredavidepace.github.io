@@ -58,11 +58,32 @@ export interface ProfileData {
   about: LocalizedString;
 }
 
+export interface NewsItem {
+  date: string;
+  en: string;
+  it: string;
+  link?: string;
+}
+
+export interface ResearchArea {
+  icon: string;
+  title: LocalizedString;
+  description: LocalizedString;
+}
+
+export interface ResearchData {
+  title: LocalizedString;
+  tagline: LocalizedString;
+  areas: ResearchArea[];
+}
+
 export interface AppData {
   profile: ProfileData;
   history: TimelineItem[];
   projects: Project[];
   publications: Publication[];
+  news: NewsItem[];
+  research: ResearchData;
   ui: {
     [key: string]: LocalizedString;
   };

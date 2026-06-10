@@ -3,8 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhD Portfolio - AI & Biomechanics</title>
-    <!-- Keeping Tailwind CDN for simplicity as requested, though a build step is recommended for heavy production use -->
+
+    <!-- Primary SEO -->
+    <title>Cesare Davide Pace — PhD Researcher in AI &amp; Biomechanics</title>
+    <meta name="description" content="PhD researcher at UNICAS &amp; LUNEX developing AI-powered markerless motion capture systems for Parkinson's disease diagnosis, gait analysis, and biomechanics." />
+    <meta name="keywords" content="Cesare Davide Pace, markerless gait analysis, Parkinson disease AI, pose estimation, biomechanics, PhD researcher, UNICAS, computer vision, explainable AI" />
+    <meta name="author" content="Cesare Davide Pace" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://cesaredavidepace.github.io/" />
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://cesaredavidepace.github.io/" />
+    <meta property="og:title" content="Cesare Davide Pace — PhD Researcher in AI &amp; Biomechanics" />
+    <meta property="og:description" content="PhD researcher at UNICAS &amp; LUNEX developing AI-powered markerless motion capture for Parkinson's disease diagnosis, gait analysis, and biomechanics." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Cesare Davide Pace" />
+    <meta property="profile:first_name" content="Cesare Davide" />
+    <meta property="profile:last_name" content="Pace" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Cesare Davide Pace — PhD Researcher in AI &amp; Biomechanics" />
+    <meta name="twitter:description" content="PhD researcher developing AI-powered markerless motion capture for Parkinson's disease diagnosis and biomechanics." />
+
+    <!-- Academic / Citation meta -->
+    <meta name="citation_author" content="Cesare Davide Pace" />
+    <meta name="DC.creator" content="Cesare Davide Pace" />
+    <meta name="DC.subject" content="Artificial Intelligence, Biomechanics, Markerless Motion Capture, Parkinson Disease, Gait Analysis" />
+
+    <!-- Tailwind CSS (CDN for dev/preview) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -15,13 +43,13 @@
               primary: {
                 50: '#f0f9ff',
                 100: '#e0f2fe',
-                500: '#0ea5e9', // Sky 500
-                600: '#0284c7', // Sky 600
-                900: '#0c4a6e', // Sky 900
+                500: '#0ea5e9',
+                600: '#0284c7',
+                900: '#0c4a6e',
               },
               dark: {
-                bg: '#0f172a', // Slate 900
-                card: '#1e293b', // Slate 800
+                bg: '#0f172a',
+                card: '#1e293b',
               }
             },
             fontFamily: {
@@ -54,5 +82,98 @@
   <body class="bg-gray-50 text-gray-900 dark:bg-dark-bg dark:text-gray-100 transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+
+    <!-- JSON-LD Structured Data (Schema.org) — primary signal for AI search engines -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://cesaredavidepace.github.io/#person",
+      "name": "Cesare Davide Pace",
+      "givenName": "Cesare Davide",
+      "familyName": "Pace",
+      "url": "https://cesaredavidepace.github.io/",
+      "email": "cesaredavide.pace@unicas.it",
+      "jobTitle": "PhD Researcher in Artificial Intelligence and Biomechanics",
+      "description": "PhD researcher developing AI-powered markerless motion capture systems for biomechanical analysis and clinical diagnosis of neurodegenerative diseases including Parkinson's disease and Alzheimer's disease.",
+      "nationality": "Italian",
+      "affiliation": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Cassino and Southern Lazio (UNICAS)",
+          "url": "https://www.unicas.it",
+          "address": { "@type": "PostalAddress", "addressLocality": "Cassino", "addressCountry": "IT" }
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "LUNEX University",
+          "url": "https://www.lunex-university.net",
+          "address": { "@type": "PostalAddress", "addressLocality": "Differdange", "addressCountry": "LU" }
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Cassino and Southern Lazio (UNICAS)"
+        }
+      ],
+      "knowsAbout": [
+        "Markerless Motion Capture",
+        "Pose Estimation",
+        "Parkinson's Disease Diagnosis",
+        "Gait Analysis",
+        "Explainable AI",
+        "Computer Vision",
+        "Biomechanics",
+        "Vision Transformers",
+        "Machine Learning"
+      ],
+      "sameAs": [
+        "https://github.com/CesareDavidePace",
+        "https://www.linkedin.com/in/cesare-davide-pace/",
+        "https://scholar.google.com/citations?user=F2jWjxAAAAAJ",
+        "https://orcid.org/0009-0006-5678-1610",
+        "https://dblp.org/pid/356/2014",
+        "https://www.researchgate.net/profile/Cesare-Pace"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://cesaredavidepace.github.io/",
+      "url": "https://cesaredavidepace.github.io/",
+      "name": "Cesare Davide Pace — PhD Researcher in AI & Biomechanics",
+      "description": "Academic portfolio of Cesare Davide Pace, PhD researcher in AI and Biomechanics at UNICAS and LUNEX University.",
+      "mainEntity": { "@id": "https://cesaredavidepace.github.io/#person" },
+      "inLanguage": ["en", "it"]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Markerless Gait Analysis for Parkinson's disease diagnosis: A study on machine learning integration and features explainability",
+      "author": { "@id": "https://cesaredavidepace.github.io/#person" },
+      "datePublished": "2025",
+      "isPartOf": { "@type": "Periodical", "name": "Engineering Applications of Artificial Intelligence" },
+      "publisher": { "@type": "Organization", "name": "Elsevier" },
+      "identifier": "https://doi.org/10.1016/j.engappai.2025.112031",
+      "url": "https://doi.org/10.1016/j.engappai.2025.112031"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Uncertainty-Aware Mapping from 3D Keypoints to Anatomical Landmarks for Markerless Biomechanics",
+      "author": { "@id": "https://cesaredavidepace.github.io/#person" },
+      "datePublished": "2026",
+      "url": "https://doi.org/10.48550/arXiv.2603.26844"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Poseidon: A ViT-based Architecture for Multi-Frame Pose Estimation with Adaptive Frame Weighting and Multi-Scale Feature Fusion",
+      "author": { "@id": "https://cesaredavidepace.github.io/#person" },
+      "datePublished": "2025",
+      "url": "https://arxiv.org/abs/2501.08446"
+    }
+  ]
+}
+    </script>
   </body>
 </html>

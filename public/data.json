@@ -15,20 +15,22 @@
       { "network": "GitHub", "username": "CesareDavidePace", "url": "https://github.com/CesareDavidePace", "iconName": "Github" },
       { "network": "LinkedIn", "username": "Cesare Davide Pace", "url": "https://www.linkedin.com/in/cesare-davide-pace/", "iconName": "Linkedin" },
       { "network": "Scholar", "username": "Google Scholar", "url": "https://scholar.google.com/citations?user=F2jWjxAAAAAJ&hl=it&oi=ao", "iconName": "GraduationCap" },
-      { "network": "Instagram", "username": "cesaredavidepace", "url": "https://instagram.com/cesaredavidepace", "iconName": "Instagram" }
+      { "network": "ORCID", "username": "0009-0006-5678-1610", "url": "https://orcid.org/0009-0006-5678-1610", "iconName": "ExternalLink" },
+      { "network": "DBLP", "username": "Cesare Davide Pace", "url": "https://dblp.org/pid/356/2014", "iconName": "BookOpen" },
+      { "network": "ResearchGate", "username": "Cesare-Pace", "url": "https://www.researchgate.net/profile/Cesare-Pace", "iconName": "FlaskConical" }
     ],
     "about": {
-      "en": "Ph.D. Student at the Department of Electrical and Information Engineering, University of Cassino and Southern Lazio. My research focuses on developing markerless motion capture systems using artificial intelligence for biomechanical analysis and clinical applications.",
-      "it": "Dottorando presso il Dipartimento di Ingegneria Elettrica e dell'Informazione, Università degli Studi di Cassino e del Lazio Meridionale. La mia ricerca si concentra sullo sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale per l'analisi biomeccanica e applicazioni cliniche."
+      "en": "I study how AI can understand human movement — without wires, without markers, just a camera and a neural network.\n\nAs a PhD student at UNICAS (University of Cassino and Southern Lazio) and in collaboration with LUNEX (Luxembourg), my research focuses on developing markerless motion capture systems that extract clinical biomarkers from video using pose estimation and machine learning. I apply these methods to the diagnosis of neurodegenerative diseases, in particular Parkinson's disease (gait analysis).",
+      "it": "Studio come l'AI possa comprendere il movimento umano — senza fili, senza marker, solo una camera e una rete neurale.\n\nCome dottorando all'UNICAS (Università degli Studi di Cassino e del Lazio Meridionale) e in collaborazione con LUNEX (Lussemburgo), la mia ricerca si concentra sullo sviluppo di sistemi markerless di motion capture che estraggono biomarcatori clinici da video tramite pose estimation e machine learning. Applico questi metodi alla diagnosi di malattie neurodegenerative, in particolare il morbo di Parkinson (analisi dell'andatura)."
     }
   },
   "history": [
     {
       "id": "1",
       "year": "2023 - Present",
-      "title": { 
-        "en": "Ph.D. in AI & Biomechanics", 
-        "it": "Dottorato di Ricerca in IA e Biomeccanica" 
+      "title": {
+        "en": "Ph.D. in AI & Biomechanics",
+        "it": "Dottorato di Ricerca in IA e Biomeccanica"
       },
       "institution": "Università degli Studi di Cassino e del Lazio Meridionale & LUNEX",
       "logos": ["/assets/unicas_emblem.svg", "/assets/logo_lunex.png"],
@@ -40,25 +42,25 @@
     },
     {
       "id": "1b",
-      "year": "2025 (6 months)",
-      "title": { 
-        "en": "Visiting Researcher", 
-        "it": "Ricercatore Visiting" 
+      "year": "2024 - 2026",
+      "title": {
+        "en": "Visiting Researcher",
+        "it": "Ricercatore Visiting"
       },
-      "institution": "LUNEX University",
+      "institution": "LUNEX University, Differdange, Luxembourg",
       "logo": "/assets/logo_lunex.png",
       "description": {
-        "en": "Six-month research visit focused on markerless motion capture systems and biomechanical analysis.",
-        "it": "Visita di ricerca di sei mesi incentrata su sistemi markerless di motion capture e analisi biomeccanica."
+        "en": "Recurring research visits at LUNEX University as part of my joint PhD programme with UNICAS. Focused on markerless motion capture and biomechanical analysis for clinical applications, with emphasis on AI-based movement assessment tools.",
+        "it": "Visite di ricerca ricorrenti presso LUNEX University nell'ambito del dottorato congiunto con UNICAS. Focalizzate su motion capture markerless e analisi biomeccanica per applicazioni cliniche, con enfasi su strumenti di valutazione del movimento basati su AI."
       },
       "type": "work"
     },
     {
       "id": "2",
       "year": "2021 - 2023",
-      "title": { 
-        "en": "M.Sc. in Computer Engineering", 
-        "it": "Laurea Magistrale in Ingegneria Informatica" 
+      "title": {
+        "en": "M.Sc. in Computer Engineering",
+        "it": "Laurea Magistrale in Ingegneria Informatica"
       },
       "institution": "Università degli Studi di Cassino e del Lazio Meridionale",
       "logo": "/assets/unicas_emblem.svg",
@@ -71,9 +73,9 @@
     {
       "id": "3",
       "year": "2017 - 2020",
-      "title": { 
-        "en": "B.Sc. in Computer and Telecommunications Engineering", 
-        "it": "Laurea in Ingegneria Informatica e delle Telecomunicazioni" 
+      "title": {
+        "en": "B.Sc. in Computer and Telecommunications Engineering",
+        "it": "Laurea in Ingegneria Informatica e delle Telecomunicazioni"
       },
       "institution": "Università degli Studi di Cassino e del Lazio Meridionale",
       "logo": "/assets/unicas_emblem.svg",
@@ -136,6 +138,41 @@
   ],
   "publications": [
     {
+      "id": "pub0a",
+      "title": "Uncertainty-Aware Mapping from 3D Keypoints to Anatomical Landmarks for Markerless Biomechanics",
+      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "venue": "arXiv Preprint",
+      "year": 2026,
+      "tags": ["Biomechanics", "Pose Estimation", "Computer Vision"],
+      "pdfLink": "https://doi.org/10.48550/arXiv.2603.26844"
+    },
+    {
+      "id": "pub0b",
+      "title": "Markerless Gait Analysis for Parkinson's disease diagnosis: A study on machine learning integration and features explainability",
+      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "venue": "Engineering Applications of Artificial Intelligence (Elsevier)",
+      "year": 2025,
+      "tags": ["Parkinson's Disease", "Gait Analysis", "Machine Learning", "Explainable AI"],
+      "doi": "10.1016/j.engappai.2025.112031"
+    },
+    {
+      "id": "pub0c",
+      "title": "Scale-Aware Fractal-Lacunarity Analysis of Handwriting for Alzheimer's Disease Classification",
+      "authors": ["Emanuele Nardone", "Marco Cantone", "Gabriele Lozupone", "Cesare Davide Pace", "Ciro Russo", "Tiziana D'Alessandro"],
+      "venue": "ICIAP Workshops 2025",
+      "year": 2025,
+      "tags": ["Alzheimer's Disease", "Handwriting Analysis", "Deep Learning"],
+      "doi": "10.1007/978-3-032-11381-8_4"
+    },
+    {
+      "id": "pub0d",
+      "title": "UniCas research initiatives in medicine and healthcare",
+      "authors": ["Gabriele Lozupone", "Marco Cantone", "Emanuele Nardone", "Cesare Davide Pace", "et al."],
+      "venue": "Ital-IA 2025",
+      "year": 2025,
+      "tags": ["Medical AI", "Healthcare"]
+    },
+    {
       "id": "pub1",
       "title": "Poseidon: A ViT-based Architecture for Multi-Frame Pose Estimation with Adaptive Frame Weighting and Multi-Scale Feature Fusion",
       "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
@@ -190,8 +227,41 @@
       "doi": "10.1007/978-3-031-43148-7_20"
     }
   ],
+  "news": [
+    { "date": "2026-03", "en": "New preprint: Uncertainty-Aware Mapping for Markerless Biomechanics", "it": "Nuovo preprint: Uncertainty-Aware Mapping per Biomeccanica Markerless", "link": "https://doi.org/10.48550/arXiv.2603.26844" },
+    { "date": "2025-11", "en": "Paper published in Engineering Applications of Artificial Intelligence (Elsevier)", "it": "Paper pubblicato su Engineering Applications of Artificial Intelligence (Elsevier)", "link": "https://doi.org/10.1016/j.engappai.2025.112031" },
+    { "date": "2025-09", "en": "Paper accepted at ICIAP Workshops 2025", "it": "Paper accettato agli ICIAP Workshops 2025" },
+    { "date": "2024-09", "en": "Papers presented at ICPR 2024 and ICDAR 2024", "it": "Paper presentati a ICPR 2024 e ICDAR 2024" }
+  ],
+  "research": {
+    "title": { "en": "Research", "it": "Ricerca" },
+    "tagline": {
+      "en": "I develop AI systems that see and understand human movement — without wires, without markers, just a camera.",
+      "it": "Sviluppo sistemi AI che vedono e comprendono il movimento umano — senza fili, senza marker, solo una camera."
+    },
+    "areas": [
+      {
+        "icon": "Activity",
+        "title": { "en": "Markerless Motion Capture", "it": "Motion Capture Markerless" },
+        "description": { "en": "Using pose estimation (ViTPose, YOLO) to extract biomechanical features from video, replacing expensive marker-based systems.", "it": "Uso della pose estimation per estrarre feature biomeccaniche da video, sostituendo sistemi costosi basati su marker." }
+      },
+      {
+        "icon": "Brain",
+        "title": { "en": "Neurodegenerative Disease Diagnosis", "it": "Diagnosi di Malattie Neurodegenerative" },
+        "description": { "en": "Classifying Parkinson's disease from gait patterns and Alzheimer's disease from handwriting using explainable ML.", "it": "Classificazione del Parkinson dall'analisi dell'andatura e dell'Alzheimer dalla scrittura tramite ML spiegabile." }
+      },
+      {
+        "icon": "Microscope",
+        "title": { "en": "Explainable AI in Medicine", "it": "AI Spiegabile in Medicina" },
+        "description": { "en": "Making AI diagnostic tools interpretable for clinicians, using SHAP and feature importance techniques.", "it": "Rendere gli strumenti diagnostici AI interpretabili per i clinici, usando SHAP e tecniche di feature importance." }
+      }
+    ]
+  },
   "ui": {
     "home": { "en": "Home", "it": "Home" },
+    "about": { "en": "About", "it": "Chi sono" },
+    "news": { "en": "News", "it": "Novità" },
+    "research": { "en": "Research", "it": "Ricerca" },
     "history": { "en": "History", "it": "Storia" },
     "projects": { "en": "Projects", "it": "Progetti" },
     "papers": { "en": "Publications", "it": "Pubblicazioni" },
