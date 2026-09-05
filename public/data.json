@@ -12,12 +12,42 @@
     "email": "cesaredavide.pace@unicas.it",
     "location": "Cassino(FR), Italy",
     "socials": [
-      { "network": "GitHub", "username": "CesareDavidePace", "url": "https://github.com/CesareDavidePace", "iconName": "Github" },
-      { "network": "LinkedIn", "username": "Cesare Davide Pace", "url": "https://www.linkedin.com/in/cesare-davide-pace/", "iconName": "Linkedin" },
-      { "network": "Scholar", "username": "Google Scholar", "url": "https://scholar.google.com/citations?user=F2jWjxAAAAAJ&hl=it&oi=ao", "iconName": "GraduationCap" },
-      { "network": "ORCID", "username": "0009-0006-5678-1610", "url": "https://orcid.org/0009-0006-5678-1610", "iconName": "ExternalLink" },
-      { "network": "DBLP", "username": "Cesare Davide Pace", "url": "https://dblp.org/pid/356/2014", "iconName": "BookOpen" },
-      { "network": "ResearchGate", "username": "Cesare-Pace", "url": "https://www.researchgate.net/profile/Cesare-Pace", "iconName": "FlaskConical" }
+      {
+        "network": "GitHub",
+        "username": "CesareDavidePace",
+        "url": "https://github.com/CesareDavidePace",
+        "iconName": "Github"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Cesare Davide Pace",
+        "url": "https://www.linkedin.com/in/cesare-davide-pace/",
+        "iconName": "Linkedin"
+      },
+      {
+        "network": "Scholar",
+        "username": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=F2jWjxAAAAAJ&hl=it&oi=ao",
+        "iconName": "GraduationCap"
+      },
+      {
+        "network": "ORCID",
+        "username": "0009-0006-5678-1610",
+        "url": "https://orcid.org/0009-0006-5678-1610",
+        "iconName": "ExternalLink"
+      },
+      {
+        "network": "DBLP",
+        "username": "Cesare Davide Pace",
+        "url": "https://dblp.org/pid/356/2014",
+        "iconName": "BookOpen"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "Cesare-Pace",
+        "url": "https://www.researchgate.net/profile/Cesare-Pace",
+        "iconName": "FlaskConical"
+      }
     ],
     "about": {
       "en": "I study how AI can understand human movement — without wires, without markers, just a camera and a neural network.\n\nAs a PhD student at UNICAS (University of Cassino and Southern Lazio) and in collaboration with LUNEX (Luxembourg), my research focuses on developing markerless motion capture systems that extract clinical biomarkers from video using pose estimation and machine learning. I apply these methods to the diagnosis of neurodegenerative diseases, in particular Parkinson's disease (gait analysis).",
@@ -33,7 +63,10 @@
         "it": "Dottorato di Ricerca in IA e Biomeccanica"
       },
       "institution": "Università degli Studi di Cassino e del Lazio Meridionale & LUNEX",
-      "logos": ["/assets/unicas_emblem.svg", "/assets/logo_lunex.png"],
+      "logos": [
+        "/assets/unicas_emblem.svg",
+        "/assets/logo_lunex.png"
+      ],
       "description": {
         "en": "Developing markerless motion capture systems using artificial intelligence for biomechanical analysis.",
         "it": "Sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale per l'analisi biomeccanica."
@@ -88,25 +121,111 @@
   ],
   "projects": [
     {
+      "id": "poseidon",
+      "shortName": "Poseidon",
+      "title": {
+        "en": "Poseidon — Multi-frame Pose Estimation",
+        "it": "Poseidon — Pose Estimation Multi-frame"
+      },
+      "description": {
+        "en": "A vision transformer architecture that combines information across video frames to estimate human pose. Adaptive frame weighting and multi-scale feature fusion bring temporal context into movement analysis.",
+        "it": "Un’architettura vision transformer che combina informazioni da più frame video per stimare la posa umana. La pesatura adattiva dei frame e la fusione di feature multi-scala integrano il contesto temporale nell’analisi del movimento."
+      },
+      "category": "deep-learning",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Vision Transformers",
+        "PoseTrack"
+      ],
+      "githubUrl": "https://github.com/CesareDavidePace/poseidon",
+      "pipeline": [
+        {
+          "en": "Video frames",
+          "it": "Frame video"
+        },
+        {
+          "en": "Adaptive temporal fusion",
+          "it": "Fusione temporale adattiva"
+        },
+        {
+          "en": "Human pose estimation",
+          "it": "Stima della posa umana"
+        }
+      ]
+    },
+    {
+      "id": "pose2landmarks",
+      "shortName": "Pose → Landmarks",
+      "title": {
+        "en": "Pose-to-Landmark Benchmark",
+        "it": "Benchmark Pose-to-Landmark"
+      },
+      "description": {
+        "en": "A reproducible benchmark for mapping 3D keypoints to anatomical landmarks. It compares neural architectures on MOVE4D and AMASS-style data, with biomechanical metrics, robustness tests, and error-propagation analysis.",
+        "it": "Un benchmark riproducibile per mappare keypoint 3D in landmark anatomici. Confronta architetture neurali su dati MOVE4D e AMASS, con metriche biomeccaniche, test di robustezza e analisi della propagazione dell’errore."
+      },
+      "category": "biomechanics",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "MOVE4D",
+        "AMASS"
+      ],
+      "githubUrl": "https://github.com/CesareDavidePace/pose2landmarks-benchmark",
+      "pipeline": [
+        {
+          "en": "3D keypoints",
+          "it": "Keypoint 3D"
+        },
+        {
+          "en": "Anatomical landmarks",
+          "it": "Landmark anatomici"
+        },
+        {
+          "en": "Biomechanical evaluation",
+          "it": "Valutazione biomeccanica"
+        }
+      ]
+    },
+    {
       "id": "p1",
-      "title": { "en": "LittleGym Management System", "it": "Sistema di Gestione LittleGym" },
+      "title": {
+        "en": "LittleGym Management System",
+        "it": "Sistema di Gestione LittleGym"
+      },
       "description": {
         "en": "A comprehensive gym booking management system for LittleGym, featuring class scheduling, member management, and online reservations.",
         "it": "Sistema completo di gestione prenotazioni per LittleGym, con programmazione corsi, gestione soci e prenotazioni online."
       },
-      "technologies": ["C#", "Web Development", "Management System", "SQL Server", "Full-stack"],
+      "technologies": [
+        "C#",
+        "Web Development",
+        "Management System",
+        "SQL Server",
+        "Full-stack"
+      ],
       "category": "web",
       "imageUrl": "/project/littlegym/image.png",
       "link": "https://www.littlegym.it"
     },
     {
       "id": "p2",
-      "title": { "en": "Unicas2Go", "it": "Unicas2Go" },
+      "title": {
+        "en": "Unicas2Go",
+        "it": "Unicas2Go"
+      },
       "description": {
         "en": "Mobile carpooling application for university students at Unicas. Connect with fellow students for shared rides to and from campus.",
         "it": "Applicazione mobile per il carpooling universitario ad Unicas. Connetti con altri studenti per condividere viaggi da e per il campus."
       },
-      "technologies": ["Mobile Development", "Flutter", "Firebase", "Firestore", "Google Maps API"],
+      "technologies": [
+        "Mobile Development",
+        "Flutter",
+        "Firebase",
+        "Firestore",
+        "Google Maps API"
+      ],
       "category": "mobile",
       "imageUrl": "/project/unicas2go/Unicas2Go.png",
       "playStoreLink": "https://play.google.com/store/apps/details?id=com.lopatech.unicas2go",
@@ -114,24 +233,43 @@
     },
     {
       "id": "p3",
-      "title": { "en": "CLEPSYDRA", "it": "CLEPSYDRA" },
+      "title": {
+        "en": "CLEPSYDRA",
+        "it": "CLEPSYDRA"
+      },
       "description": {
         "en": "Groundwater Monitoring & Decision Support System Development to Optimise Decision Making in Sensitive and Water-Scarce Agricultural Environments in Mediterranean Context.",
         "it": "Sistema di Monitoraggio delle Acque Sotterranee e Supporto Decisionale per ottimizzare il processo decisionale in ambienti agricoli sensibili e a scarsità idrica nel contesto mediterraneo."
       },
-      "technologies": ["TypeScript", "React", "Python", "PyTorch", "Celery", "FastAPI"],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Python",
+        "PyTorch",
+        "Celery",
+        "FastAPI"
+      ],
       "category": "web",
       "imageUrl": "/project/clepsydra/clepsydra.png",
       "link": "http://clepsydra-dss.eu:8008/Clepsydra_Frontend/"
     },
     {
       "id": "p4",
-      "title": { "en": "Asbestos Roof Detection with MapSat", "it": "Rilevamento Tetti in Amianto con MapSat" },
+      "title": {
+        "en": "Asbestos Roof Detection with MapSat",
+        "it": "Rilevamento Tetti in Amianto con MapSat"
+      },
       "description": {
         "en": "Master thesis project for detecting asbestos roofs from orthophotos using YOLO-based deep learning.",
         "it": "Progetto di tesi magistrale per il rilevamento di tetti in amianto da ortofoto utilizzando deep learning basato su YOLO."
       },
-      "technologies": ["OpenCV", "PyTorch", "YOLO", "Python", "Rasterio"],
+      "technologies": [
+        "OpenCV",
+        "PyTorch",
+        "YOLO",
+        "Python",
+        "Rasterio"
+      ],
       "category": "deep-learning",
       "imageUrl": "/project/asbestos/asbestos.jpg"
     }
@@ -140,101 +278,231 @@
     {
       "id": "pub0a",
       "title": "Uncertainty-Aware Mapping from 3D Keypoints to Anatomical Landmarks for Markerless Biomechanics",
-      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "authors": [
+        "Cesare Davide Pace",
+        "Alessandro Marco De Nunzio",
+        "Claudio De Stefano",
+        "Francesco Fontanella",
+        "Mario Molinara"
+      ],
       "venue": "arXiv Preprint",
       "year": 2026,
-      "tags": ["Biomechanics", "Pose Estimation", "Computer Vision"],
+      "tags": [
+        "Biomechanics",
+        "Pose Estimation",
+        "Computer Vision"
+      ],
       "pdfLink": "https://doi.org/10.48550/arXiv.2603.26844"
     },
     {
       "id": "pub0b",
       "title": "Markerless Gait Analysis for Parkinson's disease diagnosis: A study on machine learning integration and features explainability",
-      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "authors": [
+        "Cesare Davide Pace",
+        "Alessandro Marco De Nunzio",
+        "Claudio De Stefano",
+        "Francesco Fontanella",
+        "Mario Molinara"
+      ],
       "venue": "Engineering Applications of Artificial Intelligence (Elsevier)",
       "year": 2025,
-      "tags": ["Parkinson's Disease", "Gait Analysis", "Machine Learning", "Explainable AI"],
+      "tags": [
+        "Parkinson's Disease",
+        "Gait Analysis",
+        "Machine Learning",
+        "Explainable AI"
+      ],
       "doi": "10.1016/j.engappai.2025.112031"
     },
     {
       "id": "pub0c",
       "title": "Scale-Aware Fractal-Lacunarity Analysis of Handwriting for Alzheimer's Disease Classification",
-      "authors": ["Emanuele Nardone", "Marco Cantone", "Gabriele Lozupone", "Cesare Davide Pace", "Ciro Russo", "Tiziana D'Alessandro"],
+      "authors": [
+        "Emanuele Nardone",
+        "Marco Cantone",
+        "Gabriele Lozupone",
+        "Cesare Davide Pace",
+        "Ciro Russo",
+        "Tiziana D'Alessandro"
+      ],
       "venue": "ICIAP Workshops 2025",
       "year": 2025,
-      "tags": ["Alzheimer's Disease", "Handwriting Analysis", "Deep Learning"],
+      "tags": [
+        "Alzheimer's Disease",
+        "Handwriting Analysis",
+        "Deep Learning"
+      ],
       "doi": "10.1007/978-3-032-11381-8_4"
     },
     {
       "id": "pub0d",
       "title": "UniCas research initiatives in medicine and healthcare",
-      "authors": ["Gabriele Lozupone", "Marco Cantone", "Emanuele Nardone", "Cesare Davide Pace", "et al."],
+      "authors": [
+        "Gabriele Lozupone",
+        "Marco Cantone",
+        "Emanuele Nardone",
+        "Cesare Davide Pace",
+        "et al."
+      ],
       "venue": "Ital-IA 2025",
       "year": 2025,
-      "tags": ["Medical AI", "Healthcare"]
+      "tags": [
+        "Medical AI",
+        "Healthcare"
+      ]
     },
     {
       "id": "pub1",
       "title": "Poseidon: A ViT-based Architecture for Multi-Frame Pose Estimation with Adaptive Frame Weighting and Multi-Scale Feature Fusion",
-      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "authors": [
+        "Cesare Davide Pace",
+        "Alessandro Marco De Nunzio",
+        "Claudio De Stefano",
+        "Francesco Fontanella",
+        "Mario Molinara"
+      ],
       "venue": "arXiv Preprint",
       "year": 2025,
-      "tags": ["Computer Vision", "Pose Estimation", "Deep Learning"],
+      "tags": [
+        "Computer Vision",
+        "Pose Estimation",
+        "Deep Learning"
+      ],
       "pdfLink": "http://arxiv.org/abs/2501.08446v1",
       "githubUrl": "https://github.com/cesaredavidepace/poseidon"
     },
     {
       "id": "pub2",
       "title": "Markerless Machine Learning Approach for Gait Classification in Knee Osteoarthritis",
-      "authors": ["Cesare Davide Pace", "Alessandro Marco De Nunzio", "Claudio De Stefano", "Francesco Fontanella", "Mario Molinara"],
+      "authors": [
+        "Cesare Davide Pace",
+        "Alessandro Marco De Nunzio",
+        "Claudio De Stefano",
+        "Francesco Fontanella",
+        "Mario Molinara"
+      ],
       "venue": "Book Chapter",
       "year": 2025,
-      "tags": ["Gait Analysis", "Machine Learning", "Biomechanics"],
+      "tags": [
+        "Gait Analysis",
+        "Machine Learning",
+        "Biomechanics"
+      ],
       "doi": "10.1007/978-3-031-87660-8_9"
     },
     {
       "id": "pub3",
       "title": "Transformers and CNNs in Neurodiagnostics: Handwriting Analysis for Alzheimer's Diagnosis",
-      "authors": ["Gabriele Lozupone", "Emanuele Nardone", "Cesare Davide Pace", "Tiziana D'Alessandro"],
+      "authors": [
+        "Gabriele Lozupone",
+        "Emanuele Nardone",
+        "Cesare Davide Pace",
+        "Tiziana D'Alessandro"
+      ],
       "venue": "Book Chapter",
       "year": 2025,
-      "tags": ["Deep Learning", "Medical AI", "Alzheimer's"],
+      "tags": [
+        "Deep Learning",
+        "Medical AI",
+        "Alzheimer's"
+      ],
       "doi": "10.1007/978-3-031-78195-7_30"
     },
     {
       "id": "pub4",
       "title": "From Handwriting Analysis to Alzheimer's Disease Prediction: An Experimental Comparison of Classifier Combination Methods",
-      "authors": ["Tiziana D'Alessandro", "Claudio De Stefano", "Francesco Fontanella", "Emanuele Nardone", "Cesare Davide Pace"],
+      "authors": [
+        "Tiziana D'Alessandro",
+        "Claudio De Stefano",
+        "Francesco Fontanella",
+        "Emanuele Nardone",
+        "Cesare Davide Pace"
+      ],
       "venue": "Book Chapter",
       "year": 2024,
-      "tags": ["Machine Learning", "Medical AI", "Alzheimer's"],
+      "tags": [
+        "Machine Learning",
+        "Medical AI",
+        "Alzheimer's"
+      ],
       "doi": "10.1007/978-3-031-70536-6_20"
     },
     {
       "id": "pub5",
       "title": "UniCas for Medicine and Healthcare",
-      "authors": ["M. Cantone", "S. Galasso", "G. Lozupone", "E. Nardone", "C.D. Pace", "C. Russo", "A. Bria", "T. D'Alessandro", "C. De Stefano", "F. Fontanella", "C. Marrocco", "M. Molinara", "A.S. di Freca"],
+      "authors": [
+        "M. Cantone",
+        "S. Galasso",
+        "G. Lozupone",
+        "E. Nardone",
+        "C.D. Pace",
+        "C. Russo",
+        "A. Bria",
+        "T. D'Alessandro",
+        "C. De Stefano",
+        "F. Fontanella",
+        "C. Marrocco",
+        "M. Molinara",
+        "A.S. di Freca"
+      ],
       "venue": "Conference Paper",
       "year": 2024,
-      "tags": ["Medical AI", "Healthcare"]
+      "tags": [
+        "Medical AI",
+        "Healthcare"
+      ]
     },
     {
       "id": "pub6",
       "title": "End-to-End Asbestos Roof Detection on Orthophotos Using Transformer-Based YOLO Deep Neural Network",
-      "authors": ["C.D. Pace", "A. Bria", "M. Focareta", "G. Lozupone", "C. Marrocco", "G. Meoli", "M. Molinara"],
+      "authors": [
+        "C.D. Pace",
+        "A. Bria",
+        "M. Focareta",
+        "G. Lozupone",
+        "C. Marrocco",
+        "G. Meoli",
+        "M. Molinara"
+      ],
       "venue": "Conference Paper",
       "year": 2023,
-      "tags": ["Computer Vision", "Object Detection", "Transformers"],
+      "tags": [
+        "Computer Vision",
+        "Object Detection",
+        "Transformers"
+      ],
       "doi": "10.1007/978-3-031-43148-7_20"
     }
   ],
   "news": [
-    { "date": "2026-03", "en": "New preprint: Uncertainty-Aware Mapping for Markerless Biomechanics", "it": "Nuovo preprint: Uncertainty-Aware Mapping per Biomeccanica Markerless", "link": "https://doi.org/10.48550/arXiv.2603.26844" },
-    { "date": "2025-11", "en": "Paper published in Engineering Applications of Artificial Intelligence (Elsevier)", "it": "Paper pubblicato su Engineering Applications of Artificial Intelligence (Elsevier)", "link": "https://doi.org/10.1016/j.engappai.2025.112031" },
-    { "date": "2025-09", "en": "Paper accepted at ICIAP Workshops 2025", "it": "Paper accettato agli ICIAP Workshops 2025" },
-    { "date": "2024-09", "en": "Papers presented at ICPR 2024 and ICDAR 2024", "it": "Paper presentati a ICPR 2024 e ICDAR 2024" }
+    {
+      "date": "2026-03",
+      "en": "New preprint: Uncertainty-Aware Mapping for Markerless Biomechanics",
+      "it": "Nuovo preprint: Uncertainty-Aware Mapping per Biomeccanica Markerless",
+      "link": "https://doi.org/10.48550/arXiv.2603.26844"
+    },
+    {
+      "date": "2025-11",
+      "en": "Paper published in Engineering Applications of Artificial Intelligence (Elsevier)",
+      "it": "Paper pubblicato su Engineering Applications of Artificial Intelligence (Elsevier)",
+      "link": "https://doi.org/10.1016/j.engappai.2025.112031"
+    },
+    {
+      "date": "2025-09",
+      "en": "Paper accepted at ICIAP Workshops 2025",
+      "it": "Paper accettato agli ICIAP Workshops 2025"
+    },
+    {
+      "date": "2024-09",
+      "en": "Papers presented at ICPR 2024 and ICDAR 2024",
+      "it": "Paper presentati a ICPR 2024 e ICDAR 2024"
+    }
   ],
   "research": {
-    "title": { "en": "Research", "it": "Ricerca" },
+    "title": {
+      "en": "Research",
+      "it": "Ricerca"
+    },
     "tagline": {
       "en": "I develop AI systems that see and understand human movement — without wires, without markers, just a camera.",
       "it": "Sviluppo sistemi AI che vedono e comprendono il movimento umano — senza fili, senza marker, solo una camera."
@@ -242,37 +510,103 @@
     "areas": [
       {
         "icon": "Activity",
-        "title": { "en": "Markerless Motion Capture", "it": "Motion Capture Markerless" },
-        "description": { "en": "Using pose estimation (ViTPose, YOLO) to extract biomechanical features from video, replacing expensive marker-based systems.", "it": "Uso della pose estimation per estrarre feature biomeccaniche da video, sostituendo sistemi costosi basati su marker." }
+        "title": {
+          "en": "Markerless Motion Capture",
+          "it": "Motion Capture Markerless"
+        },
+        "description": {
+          "en": "Using pose estimation (ViTPose, YOLO) to extract biomechanical features from video, replacing expensive marker-based systems.",
+          "it": "Uso della pose estimation per estrarre feature biomeccaniche da video, sostituendo sistemi costosi basati su marker."
+        }
       },
       {
         "icon": "Brain",
-        "title": { "en": "Neurodegenerative Disease Diagnosis", "it": "Diagnosi di Malattie Neurodegenerative" },
-        "description": { "en": "Classifying Parkinson's disease from gait patterns and Alzheimer's disease from handwriting using explainable ML.", "it": "Classificazione del Parkinson dall'analisi dell'andatura e dell'Alzheimer dalla scrittura tramite ML spiegabile." }
+        "title": {
+          "en": "Neurodegenerative Disease Diagnosis",
+          "it": "Diagnosi di Malattie Neurodegenerative"
+        },
+        "description": {
+          "en": "Classifying Parkinson's disease from gait patterns and Alzheimer's disease from handwriting using explainable ML.",
+          "it": "Classificazione del Parkinson dall'analisi dell'andatura e dell'Alzheimer dalla scrittura tramite ML spiegabile."
+        }
       },
       {
         "icon": "Microscope",
-        "title": { "en": "Explainable AI in Medicine", "it": "AI Spiegabile in Medicina" },
-        "description": { "en": "Making AI diagnostic tools interpretable for clinicians, using SHAP and feature importance techniques.", "it": "Rendere gli strumenti diagnostici AI interpretabili per i clinici, usando SHAP e tecniche di feature importance." }
+        "title": {
+          "en": "Explainable AI in Medicine",
+          "it": "AI Spiegabile in Medicina"
+        },
+        "description": {
+          "en": "Making AI diagnostic tools interpretable for clinicians, using SHAP and feature importance techniques.",
+          "it": "Rendere gli strumenti diagnostici AI interpretabili per i clinici, usando SHAP e tecniche di feature importance."
+        }
       }
     ]
   },
   "ui": {
-    "home": { "en": "Home", "it": "Home" },
-    "about": { "en": "About", "it": "Chi sono" },
-    "news": { "en": "News", "it": "Novità" },
-    "research": { "en": "Research", "it": "Ricerca" },
-    "history": { "en": "History", "it": "Storia" },
-    "projects": { "en": "Projects", "it": "Progetti" },
-    "papers": { "en": "Publications", "it": "Pubblicazioni" },
-    "contact": { "en": "Contact", "it": "Contatti" },
-    "downloadCvShort": { "en": "Short CV (1 Page)", "it": "CV Breve (1 Pagina)" },
-    "downloadCvLong": { "en": "Extended CV", "it": "CV Completo" },
-    "education": { "en": "Education", "it": "Istruzione" },
-    "work": { "en": "Experience", "it": "Esperienza" },
-    "techStack": { "en": "Tech Stack", "it": "Tecnologie" },
-    "all": { "en": "All", "it": "Tutti" },
-    "viewProject": { "en": "View Project", "it": "Vedi Progetto" },
-    "readPaper": { "en": "Read Paper", "it": "Leggi Articolo" }
+    "home": {
+      "en": "Home",
+      "it": "Home"
+    },
+    "about": {
+      "en": "About",
+      "it": "Chi sono"
+    },
+    "news": {
+      "en": "News",
+      "it": "Novità"
+    },
+    "research": {
+      "en": "Research",
+      "it": "Ricerca"
+    },
+    "history": {
+      "en": "History",
+      "it": "Storia"
+    },
+    "projects": {
+      "en": "Projects",
+      "it": "Progetti"
+    },
+    "papers": {
+      "en": "Publications",
+      "it": "Pubblicazioni"
+    },
+    "contact": {
+      "en": "Contact",
+      "it": "Contatti"
+    },
+    "downloadCvShort": {
+      "en": "Short CV (1 Page)",
+      "it": "CV Breve (1 Pagina)"
+    },
+    "downloadCvLong": {
+      "en": "Extended CV",
+      "it": "CV Completo"
+    },
+    "education": {
+      "en": "Education",
+      "it": "Istruzione"
+    },
+    "work": {
+      "en": "Experience",
+      "it": "Esperienza"
+    },
+    "techStack": {
+      "en": "Tech Stack",
+      "it": "Tecnologie"
+    },
+    "all": {
+      "en": "All",
+      "it": "Tutti"
+    },
+    "viewProject": {
+      "en": "View Project",
+      "it": "Vedi Progetto"
+    },
+    "readPaper": {
+      "en": "Read Paper",
+      "it": "Leggi Articolo"
+    }
   }
 }

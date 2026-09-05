@@ -29,11 +29,13 @@ export interface Project {
   description: LocalizedString;
   technologies: string[];
   imageUrl?: string;
+  shortName?: string;
+  pipeline?: LocalizedString[];
   link?: string;
   playStoreLink?: string;
   appStoreLink?: string;
   githubUrl?: string;
-  category: 'vision' | 'biomechanics' | 'system' | 'web' | 'mobile';
+  category: 'vision' | 'biomechanics' | 'system' | 'web' | 'mobile' | 'deep-learning';
 }
 
 export interface Publication {

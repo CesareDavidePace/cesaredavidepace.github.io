@@ -1,37 +1,44 @@
-import React, { ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, type ReactNode } from 'react';
+import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 
 interface SectionProps {
   id: string;
-  title?: string;
+  number: string;
+  label: string;
+  title: string;
+  aside?: ReactNode;
   children: ReactNode;
-  className?: string;
 }
 
-const Section: React.FC<SectionProps> = ({ id, title, children, className = "" }) => {
+export default function Section({ id, number, label, title, aside, children }: SectionProps) {
+  const ref = useRef<HTMLElement>(null);
+  const reducedMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
+  const numberY = useTransform(scrollYProgress, [0, 1], [55, -55]);
+  const ruleScale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+
   return (
-    <section id={id} className={`py-20 px-6 md:px-12 max-w-7xl mx-auto ${className}`}>
-      {title && (
-        <motion.h2 
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl md:text-4xl font-bold mb-12 text-gray-900 dark:text-white border-l-4 border-primary-500 pl-4"
+    <section ref={ref} id={id} className={`section chapter chapter-${id}`} aria-labelledby={`${id}-heading`}>
+      <motion.span className="chapter-watermark" aria-hidden="true" style={reducedMotion ? undefined : { y: numberY }}>
+        {number}
+      </motion.span>
+      <div className="chapter-inner shell">
+        <motion.div
+          className="chapter-intro"
+          initial={reducedMotion ? false : { opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: reducedMotion ? 0 : 0.65, ease: [0.22, 1, 0.36, 1] }}
         >
-          {title}
-        </motion.h2>
-      )}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        {children}
-      </motion.div>
+          <p className="eyebrow"><span>{number}</span>{label}</p>
+          <div className="section-heading">
+            <h2 id={`${id}-heading`}>{title}</h2>
+            {aside}
+          </div>
+        </motion.div>
+        <div className="chapter-body">{children}</div>
+        <motion.div className="chapter-rule" aria-hidden="true" style={{ scaleX: reducedMotion ? 1 : ruleScale }} />
+      </div>
     </section>
   );
-};
-
-export default Section;
+}
