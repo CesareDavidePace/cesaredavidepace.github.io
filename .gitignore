@@ -5,3 +5,5 @@ dist
 .env
 presentation
 .openai/
+DESIGN.md
+

@@ -1,6 +1,6 @@
 # Cesare Davide Pace
 
-> PhD Researcher in Artificial Intelligence and Biomechanics at the University of Cassino and Southern Lazio (UNICAS) and LUNEX University, Luxembourg.
+> PhD in Artificial Intelligence and Biomechanics (defended 15 October 2026) at the University of Cassino and Southern Lazio (UNICAS) and LUNEX University, Luxembourg.
 
 Cesare Davide Pace is an Italian researcher developing AI-powered markerless motion capture systems for biomechanical analysis and clinical diagnosis of neurodegenerative diseases, particularly Parkinson's disease and Alzheimer's disease.
 
@@ -24,6 +24,6 @@ Cesare Davide Pace is an Italian researcher developing AI-powered markerless mot
 - LinkedIn: https://www.linkedin.com/in/cesare-davide-pace/
 
 ## Affiliations
-- PhD student, DIEI Department, University of Cassino and Southern Lazio (UNICAS)
+- PhD (2023–2026), DIEI Department, University of Cassino and Southern Lazio (UNICAS)
 - Co-tutela, LUNEX University, Luxembourg
 - Technologist, EveryBotics S.R.L.

@@ -2,14 +2,14 @@
   "profile": {
     "name": "Cesare Davide Pace",
     "role": {
-      "en": "Ph.D. Student in AI & Biomechanics",
-      "it": "Dottorando in IA e Biomeccanica"
+      "en": "Ph.D. in AI & Biomechanics",
+      "it": "Dottore di Ricerca in IA e Biomeccanica"
     },
     "tagline": {
-      "en": "Developing markerless motion capture systems using artificial intelligence.",
-      "it": "Sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale."
+      "en": "Human movement, measured from a camera.",
+      "it": "Il movimento umano, misurato da una camera."
     },
-    "email": "cesaredavide.pace@unicas.it",
+    "email": "cesaredavidepace@outlook.it",
     "location": "Cassino(FR), Italy",
     "socials": [
       {
@@ -50,14 +50,14 @@
       }
     ],
     "about": {
-      "en": "I study how AI can understand human movement — without wires, without markers, just a camera and a neural network.\n\nAs a PhD student at UNICAS (University of Cassino and Southern Lazio) and in collaboration with LUNEX (Luxembourg), my research focuses on developing markerless motion capture systems that extract clinical biomarkers from video using pose estimation and machine learning. I apply these methods to the diagnosis of neurodegenerative diseases, in particular Parkinson's disease (gait analysis).",
-      "it": "Studio come l'AI possa comprendere il movimento umano — senza fili, senza marker, solo una camera e una rete neurale.\n\nCome dottorando all'UNICAS (Università degli Studi di Cassino e del Lazio Meridionale) e in collaborazione con LUNEX (Lussemburgo), la mia ricerca si concentra sullo sviluppo di sistemi markerless di motion capture che estraggono biomarcatori clinici da video tramite pose estimation e machine learning. Applico questi metodi alla diagnosi di malattie neurodegenerative, in particolare il morbo di Parkinson (analisi dell'andatura)."
+      "en": "I study how AI can understand human movement — without wires, without markers, just a camera and a neural network.\n\nI completed my PhD at UNICAS (University of Cassino and Southern Lazio) in collaboration with LUNEX (Luxembourg), defending my thesis on 15 October 2026. My research develops markerless motion capture systems that extract clinical biomarkers from video using pose estimation and machine learning, applied in particular to Parkinson's disease gait analysis.",
+      "it": "Studio come l'AI possa comprendere il movimento umano — senza fili, senza marker, solo una camera e una rete neurale.\n\nHo concluso il dottorato all'UNICAS (Università degli Studi di Cassino e del Lazio Meridionale) in collaborazione con LUNEX (Lussemburgo), discutendo la tesi il 15 ottobre 2026. La mia ricerca sviluppa sistemi markerless di motion capture che estraggono biomarcatori clinici da video tramite pose estimation e machine learning, applicati in particolare all'analisi dell'andatura nel morbo di Parkinson."
     }
   },
   "history": [
     {
       "id": "1",
-      "year": "2023 - Present",
+      "year": "2023 - 2026",
       "title": {
         "en": "Ph.D. in AI & Biomechanics",
         "it": "Dottorato di Ricerca in IA e Biomeccanica"
@@ -68,8 +68,8 @@
         "/assets/logo_lunex.png"
       ],
       "description": {
-        "en": "Developing markerless motion capture systems using artificial intelligence for biomechanical analysis.",
-        "it": "Sviluppo di sistemi markerless di motion capture tramite intelligenza artificiale per l'analisi biomeccanica."
+        "en": "Markerless motion capture systems using artificial intelligence for biomechanical analysis. Thesis defended on 15 October 2026.",
+        "it": "Sistemi markerless di motion capture tramite intelligenza artificiale per l'analisi biomeccanica. Tesi discussa il 15 ottobre 2026."
       },
       "type": "education"
     },
@@ -152,7 +152,9 @@
           "en": "Human pose estimation",
           "it": "Stima della posa umana"
         }
-      ]
+      ],
+      "group": "research",
+      "art": "frames"
     },
     {
       "id": "pose2landmarks",
@@ -186,50 +188,30 @@
           "en": "Biomechanical evaluation",
           "it": "Valutazione biomeccanica"
         }
-      ]
+      ],
+      "group": "research",
+      "art": "landmarks"
     },
     {
-      "id": "p1",
+      "id": "p4",
       "title": {
-        "en": "LittleGym Management System",
-        "it": "Sistema di Gestione LittleGym"
+        "en": "Asbestos Roof Detection with MapSat",
+        "it": "Rilevamento Tetti in Amianto con MapSat"
       },
       "description": {
-        "en": "A comprehensive gym booking management system for LittleGym, featuring class scheduling, member management, and online reservations.",
-        "it": "Sistema completo di gestione prenotazioni per LittleGym, con programmazione corsi, gestione soci e prenotazioni online."
+        "en": "Master thesis project for detecting asbestos roofs from orthophotos using YOLO-based deep learning.",
+        "it": "Progetto di tesi magistrale per il rilevamento di tetti in amianto da ortofoto utilizzando deep learning basato su YOLO."
       },
       "technologies": [
-        "C#",
-        "Web Development",
-        "Management System",
-        "SQL Server",
-        "Full-stack"
+        "OpenCV",
+        "PyTorch",
+        "YOLO",
+        "Python",
+        "Rasterio"
       ],
-      "category": "web",
-      "imageUrl": "/project/littlegym/image.png",
-      "link": "https://www.littlegym.it"
-    },
-    {
-      "id": "p2",
-      "title": {
-        "en": "Unicas2Go",
-        "it": "Unicas2Go"
-      },
-      "description": {
-        "en": "Mobile carpooling application for university students at Unicas. Connect with fellow students for shared rides to and from campus.",
-        "it": "Applicazione mobile per il carpooling universitario ad Unicas. Connetti con altri studenti per condividere viaggi da e per il campus."
-      },
-      "technologies": [
-        "Mobile Development",
-        "Flutter",
-        "Firebase",
-        "Firestore",
-        "Google Maps API"
-      ],
-      "category": "mobile",
-      "imageUrl": "/project/unicas2go/Unicas2Go.png",
-      "playStoreLink": "https://play.google.com/store/apps/details?id=com.lopatech.unicas2go",
-      "appStoreLink": "https://apps.apple.com/it/app/unicas2go/id6478915627"
+      "category": "deep-learning",
+      "imageUrl": "/project/asbestos/asbestos.jpg",
+      "group": "research"
     },
     {
       "id": "p3",
@@ -251,30 +233,148 @@
       ],
       "category": "web",
       "imageUrl": "/project/clepsydra/clepsydra.png",
-      "link": "http://clepsydra-dss.eu:8008/Clepsydra_Frontend/"
+      "link": "http://clepsydra-dss.eu:8008/Clepsydra_Frontend/",
+      "group": "software"
     },
     {
-      "id": "p4",
+      "id": "p2",
       "title": {
-        "en": "Asbestos Roof Detection with MapSat",
-        "it": "Rilevamento Tetti in Amianto con MapSat"
+        "en": "Unicas2Go",
+        "it": "Unicas2Go"
       },
       "description": {
-        "en": "Master thesis project for detecting asbestos roofs from orthophotos using YOLO-based deep learning.",
-        "it": "Progetto di tesi magistrale per il rilevamento di tetti in amianto da ortofoto utilizzando deep learning basato su YOLO."
+        "en": "Mobile carpooling application for university students at Unicas. Connect with fellow students for shared rides to and from campus.",
+        "it": "Applicazione mobile per il carpooling universitario ad Unicas. Connetti con altri studenti per condividere viaggi da e per il campus."
       },
       "technologies": [
-        "OpenCV",
-        "PyTorch",
-        "YOLO",
-        "Python",
-        "Rasterio"
+        "Mobile Development",
+        "Flutter",
+        "Firebase",
+        "Firestore",
+        "Google Maps API"
       ],
-      "category": "deep-learning",
-      "imageUrl": "/project/asbestos/asbestos.jpg"
+      "category": "mobile",
+      "imageUrl": "/project/unicas2go/Unicas2Go.png",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.lopatech.unicas2go",
+      "appStoreLink": "https://apps.apple.com/it/app/unicas2go/id6478915627",
+      "group": "software"
+    },
+    {
+      "id": "p1",
+      "title": {
+        "en": "LittleGym Management System",
+        "it": "Sistema di Gestione LittleGym"
+      },
+      "description": {
+        "en": "A comprehensive gym booking management system for LittleGym, featuring class scheduling, member management, and online reservations.",
+        "it": "Sistema completo di gestione prenotazioni per LittleGym, con programmazione corsi, gestione soci e prenotazioni online."
+      },
+      "technologies": [
+        "C#",
+        "Web Development",
+        "Management System",
+        "SQL Server",
+        "Full-stack"
+      ],
+      "category": "web",
+      "imageUrl": "/project/littlegym/image.png",
+      "link": "https://www.littlegym.it",
+      "group": "software"
     }
   ],
   "publications": [
+    {
+      "id": "pub-thesis",
+      "title": "Markerless Human Movement Analysis with Artificial Intelligence: From Pose Estimation to Clinical Biomarkers",
+      "authors": [
+        "Cesare Davide Pace"
+      ],
+      "venue": "PhD Thesis, University of Cassino and Southern Lazio",
+      "year": 2026,
+      "tags": [
+        "Pose Estimation",
+        "Biomechanics",
+        "Clinical Biomarkers"
+      ],
+      "pdfLink": "https://hdl.handle.net/11580/127904"
+    },
+    {
+      "id": "pub-stagnet",
+      "title": "STAG-Net: A Spatial–Temporal Attention-Guided Network for Pathological Gait Classification",
+      "authors": [
+        "Abir Frad",
+        "Tiziana D’Alessandro",
+        "Francesco Fontanella",
+        "Emanuele Nardone",
+        "Cesare Davide Pace",
+        "Hend Basly",
+        "Fatma Zahra Sayadi"
+      ],
+      "venue": "Big Data and Cognitive Computing (MDPI)",
+      "year": 2026,
+      "doi": "10.3390/bdcc10100348",
+      "tags": [
+        "Gait Analysis",
+        "Deep Learning"
+      ]
+    },
+    {
+      "id": "pub-circular",
+      "title": "Markerless Gait Analysis and Circular Statistics: A Case Study in Parkinson’s Disease Classification",
+      "authors": [
+        "Cesare Davide Pace",
+        "Abdul Rahman",
+        "Houyem Demni",
+        "Alessandro Marco De Nunzio",
+        "Claudio De Stefano",
+        "Francesco Fontanella",
+        "Mario Molinara",
+        "Giovanni C. Porzio"
+      ],
+      "venue": "ICPR 2026 International Workshops",
+      "year": 2026,
+      "doi": "10.1007/978-3-032-39379-1_4",
+      "tags": [
+        "Gait Analysis",
+        "Parkinson’s Disease"
+      ]
+    },
+    {
+      "id": "pub-prl",
+      "title": "A dual backbone deep learning framework for early Alzheimer’s disease detection via multimodal handwriting analysis",
+      "authors": [
+        "Cesare Davide Pace",
+        "Emanuele Nardone",
+        "Tiziana D’Alessandro"
+      ],
+      "venue": "Pattern Recognition Letters (Elsevier)",
+      "year": 2026,
+      "doi": "10.1016/j.patrec.2026.09.040",
+      "tags": [
+        "Handwriting",
+        "Alzheimer’s Disease",
+        "Deep Learning"
+      ]
+    },
+    {
+      "id": "pub-iot",
+      "title": "Machine Learning for Non-Intrusive Profiling of IoT Devices in Noisy Environments",
+      "authors": [
+        "Vincenzo Rega",
+        "Luca Tari",
+        "Domenico Capriglione",
+        "Mario Molinara",
+        "Cesare Davide Pace",
+        "Fabrizio Marignetti"
+      ],
+      "venue": "IEEE AI4IM 2026",
+      "year": 2026,
+      "doi": "10.1109/ai4im69129.2026.11558219",
+      "tags": [
+        "Machine Learning",
+        "IoT"
+      ]
+    },
     {
       "id": "pub0a",
       "title": "Uncertainty-Aware Mapping from 3D Keypoints to Anatomical Landmarks for Markerless Biomechanics",
@@ -476,6 +576,11 @@
   ],
   "news": [
     {
+      "date": "2026-10",
+      "en": "PhD defended at the University of Cassino and Southern Lazio",
+      "it": "Dottorato concluso all'Università di Cassino e del Lazio Meridionale"
+    },
+    {
       "date": "2026-03",
       "en": "New preprint: Uncertainty-Aware Mapping for Markerless Biomechanics",
       "it": "Nuovo preprint: Uncertainty-Aware Mapping per Biomeccanica Markerless",
@@ -608,5 +713,253 @@
       "en": "Read Paper",
       "it": "Leggi Articolo"
     }
-  }
+  },
+  "story": [
+    {
+      "id": "bsc-start",
+      "date": "2017",
+      "title": {
+        "en": "Engineering",
+        "it": "Ingegneria"
+      },
+      "detail": {
+        "en": "Start of the B.Sc. in Computer and Telecommunications Engineering at UNICAS.",
+        "it": "Inizio della laurea triennale in Ingegneria Informatica e delle Telecomunicazioni all'UNICAS."
+      },
+      "orgs": [
+        "unicas"
+      ]
+    },
+    {
+      "id": "bsc",
+      "date": "2020",
+      "title": {
+        "en": "First degree",
+        "it": "Prima laurea"
+      },
+      "detail": {
+        "en": "B.Sc. in Computer and Telecommunications Engineering.",
+        "it": "Laurea triennale in Ingegneria Informatica e delle Telecomunicazioni."
+      },
+      "orgs": [
+        "unicas"
+      ]
+    },
+    {
+      "id": "msc",
+      "date": "2023",
+      "title": {
+        "en": "110 cum laude",
+        "it": "110 e lode"
+      },
+      "detail": {
+        "en": "M.Sc. in Computer Engineering, with a thesis on asbestos roof detection from orthophotos.",
+        "it": "Laurea magistrale in Ingegneria Informatica, con una tesi sul rilevamento di tetti in amianto da ortofoto."
+      },
+      "image": "/project/asbestos/asbestos.jpg",
+      "orgs": [
+        "unicas"
+      ]
+    },
+    {
+      "id": "phd-start",
+      "date": "2023",
+      "title": {
+        "en": "The PhD begins",
+        "it": "Inizia il dottorato"
+      },
+      "detail": {
+        "en": "Joint PhD in AI and Biomechanics between UNICAS and LUNEX University.",
+        "it": "Dottorato in IA e Biomeccanica tra UNICAS e LUNEX University."
+      },
+      "orgs": [
+        "unicas",
+        "lunex"
+      ]
+    },
+    {
+      "id": "lunex",
+      "date": "2024",
+      "title": {
+        "en": "Luxembourg",
+        "it": "Lussemburgo"
+      },
+      "detail": {
+        "en": "Research visits at LUNEX University, Differdange, on markerless motion capture.",
+        "it": "Visite di ricerca a LUNEX University, Differdange, sul motion capture markerless."
+      },
+      "orgs": [
+        "lunex"
+      ]
+    },
+    {
+      "id": "defense-moment",
+      "date": "2026-10-15",
+      "title": {
+        "en": "PhD defense",
+        "it": "Discussione del dottorato"
+      },
+      "detail": {
+        "en": "Thesis: “Markerless Human Movement Analysis with Artificial Intelligence: From Pose Estimation to Clinical Biomarkers”",
+        "it": "Tesi: “Markerless Human Movement Analysis with Artificial Intelligence: From Pose Estimation to Clinical Biomarkers”"
+      },
+      "orgs": [
+        "unicas",
+        "lunex"
+      ],
+      "link": "https://hdl.handle.net/11580/127904"
+    },
+    {
+      "id": "defense",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Doctor of Philosophy",
+        "it": "Dottore di Ricerca"
+      },
+      "finale": true
+    }
+  ],
+  "talks": [
+    {
+      "id": "lunex-prompt-engineering",
+      "date": "2026-05-13",
+      "title": {
+        "en": "Prompt Engineering",
+        "it": "Prompt Engineering"
+      },
+      "kind": {
+        "en": "Workshop",
+        "it": "Workshop"
+      },
+      "place": {
+        "en": "LUNEX University",
+        "it": "LUNEX University"
+      },
+      "detail": {
+        "en": "Using AI with intention: thinking, structuring problems and communicating clearly.",
+        "it": "Usare l'AI con intenzione: pensare, strutturare i problemi e comunicare con chiarezza."
+      },
+      "images": [
+        "/talks/lunex-prompt-engineering.webp"
+      ]
+    },
+    {
+      "id": "innovaction",
+      "date": "2026-02-05",
+      "title": {
+        "en": "InnovAction Pills On Air",
+        "it": "InnovAction Pills On Air"
+      },
+      "kind": {
+        "en": "Talk and podcast",
+        "it": "Intervento e podcast"
+      },
+      "place": {
+        "en": "Rotaract Club Cassino, ITIS E. Majorana",
+        "it": "Rotaract Club Cassino, ITIS E. Majorana"
+      },
+      "detail": {
+        "en": "Markerless motion analysis based on artificial intelligence, explained to high school students.",
+        "it": "L'analisi del movimento senza marcatori basata sull'intelligenza artificiale, raccontata agli studenti."
+      },
+      "images": [
+        "/talks/innovaction-radio.webp",
+        "/talks/innovaction-poster.webp"
+      ],
+      "video": "https://www.youtube.com/watch?v=dVn5MEf7Y5U&t=1s"
+    },
+    {
+      "id": "next-steps-ai",
+      "date": "2024-07-16",
+      "title": {
+        "en": "Next Steps in AI",
+        "it": "Next Steps in AI"
+      },
+      "kind": {
+        "en": "Seminar",
+        "it": "Seminario"
+      },
+      "place": {
+        "en": "University of Cassino and Southern Lazio",
+        "it": "Università di Cassino e del Lazio Meridionale"
+      },
+      "detail": {
+        "en": "How large language models work, how to evaluate them, and autonomous agents.",
+        "it": "Come funzionano i Large Language Model, come valutarli e gli agenti autonomi."
+      },
+      "images": [
+        "/talks/next-steps-ai-llms.webp",
+        "/talks/next-steps-ai-agents.webp"
+      ]
+    },
+    {
+      "id": "igs-2025",
+      "date": "2025-06",
+      "title": {
+        "en": "IGS 2025",
+        "it": "IGS 2025"
+      },
+      "kind": {
+        "en": "Two conference talks",
+        "it": "Due presentazioni"
+      },
+      "place": {
+        "en": "Polytechnique Montréal, Canada",
+        "it": "Polytechnique Montréal, Canada"
+      },
+      "detail": {
+        "en": "Alzheimer’s detection from multiple handwriting signals, and deep temporal modelling of gait to tell Parkinson’s disease from progressive supranuclear palsy.",
+        "it": "Il rilevamento dell'Alzheimer da più segnali di scrittura e modelli temporali profondi sull'andatura per distinguere il Parkinson dalla paralisi sopranucleare progressiva."
+      },
+      "images": [
+        "/talks/igs-2025-montreal.webp"
+      ]
+    },
+    {
+      "id": "esb-2024",
+      "date": "2024-07",
+      "title": {
+        "en": "ESBiomech 2024",
+        "it": "ESBiomech 2024"
+      },
+      "kind": {
+        "en": "Poster",
+        "it": "Poster"
+      },
+      "place": {
+        "en": "Edinburgh, United Kingdom",
+        "it": "Edimburgo, Regno Unito"
+      },
+      "detail": {
+        "en": "Markerless gait analysis and machine learning to classify knee osteoarthritis.",
+        "it": "Analisi markerless del cammino e machine learning per classificare l'artrosi del ginocchio."
+      },
+      "images": [
+        "/talks/esb-2024-edinburgh.webp"
+      ]
+    },
+    {
+      "id": "exoberlin-2024",
+      "date": "2024-04-17",
+      "title": {
+        "en": "EXOBerlin 2024",
+        "it": "EXOBerlin 2024"
+      },
+      "kind": {
+        "en": "Talk",
+        "it": "Intervento"
+      },
+      "place": {
+        "en": "Berlin, Germany",
+        "it": "Berlino, Germania"
+      },
+      "detail": {
+        "en": "Markerless gait analysis for Parkinson’s disease diagnosis.",
+        "it": "Analisi markerless del cammino per la diagnosi del Parkinson."
+      },
+      "images": [
+        "/talks/exoberlin-2024.webp"
+      ]
+    }
+  ]
 }

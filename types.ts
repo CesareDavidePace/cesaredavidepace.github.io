@@ -35,6 +35,9 @@ export interface Project {
   playStoreLink?: string;
   appStoreLink?: string;
   githubUrl?: string;
+  group?: 'research' | 'software';
+  /** Generated illustration for projects without an image */
+  art?: 'frames' | 'landmarks';
   category: 'vision' | 'biomechanics' | 'system' | 'web' | 'mobile' | 'deep-learning';
 }
 
@@ -67,6 +70,35 @@ export interface NewsItem {
   link?: string;
 }
 
+export interface StoryItem {
+  id: string;
+  /** YYYY, YYYY-MM or YYYY-MM-DD */
+  date: string;
+  title: LocalizedString;
+  detail?: LocalizedString;
+  image?: string;
+  link?: string;
+  /** URL of the LinkedIn post this moment comes from */
+  linkedin?: string;
+  finale?: boolean;
+  /** Institutions shown as logos: keys of ORGS in components/Story.tsx */
+  orgs?: ('unicas' | 'lunex')[];
+}
+
+export interface Talk {
+  id: string;
+  /** YYYY-MM-DD, or YYYY-MM when the day is not known */
+  date: string;
+  title: LocalizedString;
+  kind: LocalizedString;
+  place: LocalizedString;
+  detail: LocalizedString;
+  /** First image is the cover */
+  images: string[];
+  video?: string;
+  linkedin?: string;
+}
+
 export interface ResearchArea {
   icon: string;
   title: LocalizedString;
@@ -85,6 +117,8 @@ export interface AppData {
   projects: Project[];
   publications: Publication[];
   news: NewsItem[];
+  story: StoryItem[];
+  talks: Talk[];
   research: ResearchData;
   ui: {
     [key: string]: LocalizedString;
